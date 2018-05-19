@@ -30,6 +30,7 @@ Start by downloading and installing the appropriate prerequisite tools.
 - [Apache Maven](http://info.pivotal.io/HI002010A6ZlRJR1NeU00eC) to build labs using Maven
 - [Gradle](https://services.gradle.org/distributions/gradle-3.1-all.zip) to build labs using Gradle
 - [Git Client](https://git-scm.com/downloads) to clone Github repo or download and unzip
+
 **Download materials**
 
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
