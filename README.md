@@ -15,8 +15,8 @@ Time | Session
 10:30AM  | _Platform Installation, Setup and Lunch_
 11:15  | _Role Based Access Control_
 12:45 | _Break_
-1:00 | _Health, Event and Logging a Pragmatic way to Monitor a Platform_
-1:50 | _Platform & Application Patching, How to automagically upgrade the platform_
+1:00 | _A Pragmatic way to monitor a platform - Health, Event and Logging _
+1:50 | _How to automagically upgrade the platform - Platform & Application Patching_
 2:30 | _Security Overview_
 2:45 | _Break_
 3:00 | _Authentication & Authorization_
@@ -43,7 +43,7 @@ $ cd ss-pcf-workshop/
 Finally, we've setup a PAS environment in AWS as well as on Pivotal Elastic Zones. Please see the [Pivotal Cloud Foundry Environment document](common/env_info.md) for details. You should have been assigned a student number and PCF instance at registration. Otherwise the instructors will provide that information for your use.
 ## The Team
 - **Paul Hopper** - Pivotal Platform Architect, phopper@pivotal.io #PaulReeseHopper
-- **Bryan Kelly** - Cerner Solutions Architect and PCF Platform Team, bryan.kelly@cerner.com
+- **Bryan Kelly** - Cerner Solutions Architect and PCF Platform Team Lead, bryan.kelly@cerner.com
 - **Brian Lock** - Pivotal Account Executive, block@pivotal.io
 
 ## Thanks
