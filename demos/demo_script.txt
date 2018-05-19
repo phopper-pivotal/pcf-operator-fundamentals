@@ -1,0 +1,134 @@
+# Demo 1
+## clone repository, target environment and push spring-music
+
+cd apps/pring-music
+
+gradlew clean assemble
+
+cf api --skip-ssl-validation https://
+
+cf login
+
+cf push
+
+# Services Demo
+
+cf marketplace
+
+cf create-service p-mysql 100mb-dev spring-music-db
+
+cf bind-service spring-music spring-music-db
+
+cf env spring-music
+
+cf restage spring-music
+
+## no let's clean up
+
+cf delete spring-music
+
+cf delete-service spring-music-db
+
+
+# Application scaling & Autoscaler Demo
+
+cd ../cf-scale-boot
+
+cf push
+
+cf scale -i 5 cf-scale-boot
+
+watch cf app cf-scale-boot
+
+### visit the webpage to see round robin through the instances
+
+cf scale -i 1 cf-scale-boot
+
+### visit the webpage to see only one instance
+
+### go to AppsManager
+
+#### select the org
+#### select the space
+#### select the cf-scale-boot application
+
+#### scale app to 2 instances
+
+### enable app auto-scaler
+
+### restage application
+
+cf restage cf-scale-boot
+
+#### hit cf-scale-boot app endpoint /load and watch the behaviour
+
+#### disable auto-scale
+
+cf restage cf-scale-boot
+
+# monitoring applications
+
+cf logs cf-scale-boot
+
+## visit cf-scale-boot application and select kill switch button
+
+## reload application
+
+cf events cf-scale-boot
+
+## visit the cf-scale-boot webpage again
+
+## ok we've seen logs what about recent logs
+
+cf logs cf-scale-boot --recent
+
+vs.
+
+cf logs cf-scale-boot
+
+## let's add new events
+
+cf stop cf-scale-boot
+
+cf events cf-scale-boot
+
+cf start cf-scale-boot
+
+cf events cf-scale-boot
+
+## how do you expose application metrics to devlopers today?
+
+## now let's walk over to application metrics
+
+# blue / green deployments
+
+cf apps
+
+cf routes
+
+## let's modify the color of the button on cf-scale-boot
+### uncomment warning line
+### comment danger line
+
+### rename application name and host in manifest.yml to _v2
+
+cf push
+
+### once done
+
+cf routes
+
+### visit URL of this application
+
+cf map-route cf-scale-boot-v2 --hostname cf-scale-boot
+
+
+cf routes
+
+
+## now hit endpoint for cf-scale-boot and watch in round robin through the two versions
+
+cf unmap-route cf-scale-boot cfapps.io cf-scale-boot
+
+
+## now hit the endpoint for cf-scale-boot and notice the old version is gone
