@@ -15,7 +15,7 @@ Time | Session
 10:30AM  | _Platform Installation, Setup and Lunch_
 11:15  | _Role Based Access Control_
 12:45 | _Break_
-1:00 | _A Pragmatic way to monitor a platform - Health, Event and Logging _
+1:00 | _A Pragmatic way to monitor a platform - Health, Event and Logging_
 1:50 | _How to automagically upgrade the platform - Platform & Application Patching_
 2:30 | _Security Overview_
 2:45 | _Break_
