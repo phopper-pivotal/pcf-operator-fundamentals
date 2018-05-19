@@ -9,14 +9,14 @@ You’ll leave this workshop with a better understanding of what you need for Da
 ## Agenda
 Time | Session
 ---- | -------
-8:30AM  | _Introductions, PCF Overview & Demo_
-9:30AM  | _[Services Overview](./decks/02-Ops_Workshop-Services_Overview.pptx)_
-10:15  | _Break_
-10:30AM  | _[Platform Installation and Setup](./decks/03-Ops_Workshop-Platform_Installation_and_Setup.pptx)_
+8:30 AM  | _Introductions, PCF Overview & Demo_
+9:30 AM  | _[Services Overview](./decks/02-Ops_Workshop-Services_Overview.pptx)_
+10:15 AM | _Break_
+10:30 AM  | _[Platform Installation and Setup](./decks/03-Ops_Workshop-Platform_Installation_and_Setup.pptx)_
 11:15  | _[Role Based Access Control](./decks/04-Ops_Workshop-RBAC.pptx)_
 11:45  | _[Platform and Application Scaling, working lunch](./decks/05-Ops_Workshop-Platform_and_Application_Scaling.pptx)_
 12:45 | _Break_
-1:00 | _[A Pragmatic way to monitor a platform - Health, Event and Logging](.decks/06-Ops_Workshop-Health_Events_and_Logging.pptx)_
+1:00 | _[A Pragmatic way to monitor a platform - Health, Events and Logging](.decks/06-Ops_Workshop-Health_Events_and_Logging.pptx)_
 1:50 | _[How to automagically upgrade the platform - Platform & Application Patching](./decks/07-Ops_Workshop-Platform_and_Application_Patching.pptx)_
 2:30 | _[Security Overview](./decks/08-Ops_Workshop-Security_Overview.pptx)_
 2:45 | _Break_
