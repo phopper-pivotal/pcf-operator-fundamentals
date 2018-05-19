@@ -10,7 +10,7 @@ You’ll leave this workshop with a better understanding of what you need for Da
 Time | Session
 ---- | -------
 8:30AM  | _Introductions, PCF Overview & Demo_
-9:30AM  | _Services Overview_
+9:30AM  | _[Services Overview](./decks/02-Ops_Workshop-Services_Overview.pptx)_
 10:15  | _Break_
 10:30AM  | _Platform Installation, Setup and Lunch_
 11:15  | _Role Based Access Control_
