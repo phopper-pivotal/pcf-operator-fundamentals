@@ -37,8 +37,8 @@ Start by downloading and installing the appropriate prerequisite tools.
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
 
 ```
-$ git clone https://github.com/ssahadevan-pivotal/ss-pcf-workshop.git
-$ cd ss-pcf-workshop/
+$ git clone https://github.com/phopper-pivotal/pcf-operator-fundamentals.git
+$ cd pcf-operator-fundamentals/
 ```
 
 **PCF Environments**
