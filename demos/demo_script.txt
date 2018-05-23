@@ -1,13 +1,29 @@
 # Demo 1
 ## clone repository, target environment and push spring-music
 
-cd apps/pring-music
+cd apps/spring-music
 
 gradlew clean assemble
 
-cf api --skip-ssl-validation https://
+# let's look at the structure of what was built
+
+tree build/libs
+
+cf api --skip-ssl-validation https://api.run.haas-100.pez.pivotal.io
 
 cf login
+
+# now since I'm admin user let's setup a user, create an org, create some spaces
+# and assign some role based access
+
+cf create-user workshop workshop123
+
+cf create-org cerner-cts
+
+
+cf set-org-role workshop OrgManager
+
+cf 
 
 cf push
 
