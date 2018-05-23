@@ -41,8 +41,6 @@ $ git clone https://github.com/phopper-pivotal/pcf-operator-fundamentals.git
 $ cd pcf-operator-fundamentals/
 ```
 
-**PCF Environments**
-Finally, we've setup a PAS environment in AWS as well as on Pivotal Elastic Zones. Please see the [Pivotal Cloud Foundry Environment document](common/env_info.md) for details. You should have been assigned a student number and PCF instance at registration. Otherwise the instructors will provide that information for your use.
 ## The Team
 - **Paul Hopper** - Pivotal Platform Architect, phopper@pivotal.io #PaulReeseHopper
 - **Bryan Kelly** - Cerner Solutions Architect and PCF Platform Team Lead, bryan.kelly@cerner.com
