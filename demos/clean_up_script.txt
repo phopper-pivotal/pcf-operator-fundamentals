@@ -1,0 +1,8 @@
+# clean-up script
+cf unbind-service spring-music spring-music-db
+
+cf delete-service spring-music-db -f
+
+cf delete spring-music -f
+
+cf delete-org cerner-cts

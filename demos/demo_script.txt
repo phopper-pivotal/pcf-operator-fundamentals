@@ -5,7 +5,7 @@ cd apps/spring-music
 
 gradlew clean assemble
 
-# let's look at the structure of what was built
+### let's look at the structure of what was built
 
 tree build/libs
 
@@ -13,17 +13,45 @@ cf api --skip-ssl-validation https://api.run.haas-100.pez.pivotal.io
 
 cf login
 
-# now since I'm admin user let's setup a user, create an org, create some spaces
-# and assign some role based access
+### now since I'm admin user let's setup a user, create an org, create some spaces
+### and assign some role based access
 
 cf create-user workshop workshop123
 
 cf create-org cerner-cts
 
+cf create-space dev -o cerner-cts
 
-cf set-org-role workshop OrgManager
+cf create-space devcert -o cerner-cts
 
-cf 
+cf create-space prod -o cerner-cts
+
+cf set-org-role workshop cerner-cts OrgManager
+
+cf set-space-role workshop cerner-cts dev SpaceManager
+
+cf set-space-role workshop cerner-cts devcert SpaceManager
+
+cf set-space-role workshop cerner-cts prod SpaceManager
+
+### ok we've set up dev, devcert and prod environments or spaces. we need to target one
+
+### so now where do we go? set the org
+
+cf orgs
+
+cf target -o cerner-cts
+
+### so now we can push our app, wait is this application to be pushed to dev environment?
+
+cf spaces
+
+cf target -o cerner-cts -s dev
+
+### hey paul are really sure your going to push this app to cerner-cts dev env?
+## let's verify
+
+cf target
 
 cf push
 
@@ -31,7 +59,7 @@ cf push
 
 cf marketplace
 
-cf create-service p-mysql 100mb-dev spring-music-db
+cf create-service p.mysql db-small spring-music-db
 
 cf bind-service spring-music spring-music-db
 
