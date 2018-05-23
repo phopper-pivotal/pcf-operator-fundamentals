@@ -46,6 +46,7 @@ Finally, we've setup a PAS environment in AWS as well as on Pivotal Elastic Zone
 ## The Team
 - **Paul Hopper** - Pivotal Platform Architect, phopper@pivotal.io #PaulReeseHopper
 - **Bryan Kelly** - Cerner Solutions Architect and PCF Platform Team Lead, bryan.kelly@cerner.com
+- **Aaron Gershman** - Cerner Solutions Architect and PCF Platform Team Lead, aaron.gershman@cerner.com
 - **Brian Lock** - Pivotal Account Executive, block@pivotal.io
 
 ## Thanks
